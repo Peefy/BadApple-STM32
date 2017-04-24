@@ -1,0 +1,861 @@
+Dependencies for Project 'Project', Target 'LED': (DO NOT MODIFY !)
+F (..\USER\main.c)(0x58009F88)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\include.h)(0x57FA90AF)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_it.h)(0x4CBC5B58)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\init.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\iwdg.h)(0x57F6FD56)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\tim.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\led.h)(0x57F9B381)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\Queue.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\BadApple\BadApple.h)(0x57FCF306)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+F (..\USER\stm32f10x_it.c)(0x57FA444F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_it.o --omf_browse .\obj\stm32f10x_it.crf --depend .\obj\stm32f10x_it.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\include.h)(0x57FA90AF)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_it.h)(0x4CBC5B58)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\init.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\iwdg.h)(0x57F6FD56)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\tim.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\led.h)(0x57F9B381)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\Queue.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\BadApple\BadApple.h)(0x57FCF306)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+F (..\USER\stm32f10x_conf.h)(0x56A9BEB7)()
+F (..\USER\delay.c)(0x569624D0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\delay.o --omf_browse .\obj\delay.crf --depend .\obj\delay.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\USER\init.c)(0x57FA91A1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\init.o --omf_browse .\obj\init.crf --depend .\obj\init.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\include.h)(0x57FA90AF)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_it.h)(0x4CBC5B58)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\init.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\iwdg.h)(0x57F6FD56)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\tim.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\led.h)(0x57F9B381)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\Queue.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\BadApple\BadApple.h)(0x57FCF306)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+F (..\USER\uart.c)(0x57F9CF4F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\uart.o --omf_browse .\obj\uart.crf --depend .\obj\uart.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\uart.h)(0x57F9CF4F)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4CBC3904)
+F (..\USER\pwm.c)(0x57F9CF4F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\pwm.o --omf_browse .\obj\pwm.crf --depend .\obj\pwm.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\pwm.h)(0x57F9CF4F)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+F (..\USER\ad.c)(0x57F9D484)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\ad.o --omf_browse .\obj\ad.crf --depend .\obj\ad.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\ad.h)(0x57F9CEAA)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\USER\include.h)(0x57FA90AF)()
+F (..\USER\flash.c)(0x57F3B097)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\flash.o --omf_browse .\obj\flash.crf --depend .\obj\flash.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\include.h)(0x57FA90AF)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_it.h)(0x4CBC5B58)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\init.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\iwdg.h)(0x57F6FD56)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\tim.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\led.h)(0x57F9B381)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\Queue.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\BadApple\BadApple.h)(0x57FCF306)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+F (..\USER\iwdg.c)(0x57FA907F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\iwdg.o --omf_browse .\obj\iwdg.crf --depend .\obj\iwdg.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\USER\tim.c)(0x57F9B346)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\tim.o --omf_browse .\obj\tim.crf --depend .\obj\tim.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\tim.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\USER\led.c)(0x57F9B347)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\led.o --omf_browse .\obj\led.crf --depend .\obj\led.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\led.h)(0x57F9B381)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\USER\spi.c)(0x57F9CE39)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\spi.o --omf_browse .\obj\spi.crf --depend .\obj\spi.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\spi.h)(0x57F9CE3A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\misc.o --omf_browse .\obj\misc.crf --depend .\obj\misc.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_flash.o --omf_browse .\obj\stm32f10x_flash.crf --depend .\obj\stm32f10x_flash.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_gpio.o --omf_browse .\obj\stm32f10x_gpio.crf --depend .\obj\stm32f10x_gpio.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_rcc.o --omf_browse .\obj\stm32f10x_rcc.crf --depend .\obj\stm32f10x_rcc.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_adc.o --omf_browse .\obj\stm32f10x_adc.crf --depend .\obj\stm32f10x_adc.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_bkp.o --omf_browse .\obj\stm32f10x_bkp.crf --depend .\obj\stm32f10x_bkp.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_can.o --omf_browse .\obj\stm32f10x_can.crf --depend .\obj\stm32f10x_can.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_cec.o --omf_browse .\obj\stm32f10x_cec.crf --depend .\obj\stm32f10x_cec.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_crc.o --omf_browse .\obj\stm32f10x_crc.crf --depend .\obj\stm32f10x_crc.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_dac.o --omf_browse .\obj\stm32f10x_dac.crf --depend .\obj\stm32f10x_dac.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_dbgmcu.o --omf_browse .\obj\stm32f10x_dbgmcu.crf --depend .\obj\stm32f10x_dbgmcu.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_dma.o --omf_browse .\obj\stm32f10x_dma.crf --depend .\obj\stm32f10x_dma.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_exti.o --omf_browse .\obj\stm32f10x_exti.crf --depend .\obj\stm32f10x_exti.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_fsmc.o --omf_browse .\obj\stm32f10x_fsmc.crf --depend .\obj\stm32f10x_fsmc.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_i2c.o --omf_browse .\obj\stm32f10x_i2c.crf --depend .\obj\stm32f10x_i2c.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_iwdg.o --omf_browse .\obj\stm32f10x_iwdg.crf --depend .\obj\stm32f10x_iwdg.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_pwr.o --omf_browse .\obj\stm32f10x_pwr.crf --depend .\obj\stm32f10x_pwr.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_rtc.o --omf_browse .\obj\stm32f10x_rtc.crf --depend .\obj\stm32f10x_rtc.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_sdio.o --omf_browse .\obj\stm32f10x_sdio.crf --depend .\obj\stm32f10x_sdio.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_spi.o --omf_browse .\obj\stm32f10x_spi.crf --depend .\obj\stm32f10x_spi.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_tim.o --omf_browse .\obj\stm32f10x_tim.crf --depend .\obj\stm32f10x_tim.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c)(0x56A9B78D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_usart.o --omf_browse .\obj\stm32f10x_usart.crf --depend .\obj\stm32f10x_usart.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c)(0x4CBC3904)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_wwdg.o --omf_browse .\obj\stm32f10x_wwdg.crf --depend .\obj\stm32f10x_wwdg.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c)(0x4CBC3900)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\core_cm3.o --omf_browse .\obj\core_cm3.crf --depend .\obj\core_cm3.d)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+F (..\USER\system_stm32f10x.c)(0x4CBC5B58)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\system_stm32f10x.o --omf_browse .\obj\system_stm32f10x.crf --depend .\obj\system_stm32f10x.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+F (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s)(0x4CBC3902)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x--list .\list\startup_stm32f10x_hd.lst --xref -o .\obj\startup_stm32f10x_hd.o --depend .\obj\startup_stm32f10x_hd.d)
+F (..\readme.txt)(0x521F4069)()
+F (..\MicroSD\diskio.c)(0x57F99900)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\diskio.o --omf_browse .\obj\diskio.crf --depend .\obj\diskio.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+F (..\MicroSD\ff.c)(0x55A5502A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\ff.o --omf_browse .\obj\ff.crf --depend .\obj\ff.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+F (..\MicroSD\stm32f10x_fatfs.c)(0x58009AFD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_fatfs.o --omf_browse .\obj\stm32f10x_fatfs.crf --depend .\obj\stm32f10x_fatfs.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_fatfs.h)(0x57F9A6E6)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+F (..\MicroSD\stm32f10x_microsd.c)(0x58009A1F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\stm32f10x_microsd.o --omf_browse .\obj\stm32f10x_microsd.crf --depend .\obj\stm32f10x_microsd.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\MyLib\CString.c)(0x57FE2B2C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\cstring.o --omf_browse .\obj\cstring.crf --depend .\obj\cstring.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\MyLib\Queue.c)(0x57FBA4C3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\queue.o --omf_browse .\obj\queue.crf --depend .\obj\queue.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\Queue.h)(0x57FBA4C3)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\include.h)(0x57FA90AF)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_it.h)(0x4CBC5B58)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\init.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\iwdg.h)(0x57F6FD56)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\tim.h)(0x57F9B347)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\led.h)(0x57F9B381)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\BadApple\BadApple.h)(0x57FCF306)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+F (..\MyLib\SystemCore.c)(0x57FBA4F2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\systemcore.o --omf_browse .\obj\systemcore.crf --depend .\obj\systemcore.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\VcanLCD\Color.c)(0x58009645)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\color.o --omf_browse .\obj\color.crf --depend .\obj\color.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+F (..\VcanLCD\VcanLCDforSTM32.c)(0x58009713)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\vcanlcdforstm32.o --omf_browse .\obj\vcanlcdforstm32.crf --depend .\obj\vcanlcdforstm32.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+F (..\VcanLCD\VcanLcdKey.c)(0x57FAE4DD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\vcanlcdkey.o --omf_browse .\obj\vcanlcdkey.crf --depend .\obj\vcanlcdkey.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\BadApple\BadApple.h)(0x57FCF306)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\led.h)(0x57F9B381)
+F (..\VcanLCD\HZK16.c)(0x580096FA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\hzk16.o --omf_browse .\obj\hzk16.crf --depend .\obj\hzk16.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+F (..\VcanLCD\Image_BMP.c)(0x57FE30EB)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\image_bmp.o --omf_browse .\obj\image_bmp.crf --depend .\obj\image_bmp.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+F (..\BadApple\BadApple.c)(0x57FE46DE)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\STM32F10x_StdPeriph_Driver\src -I..\USER -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\MicroSD -I..\MyLib -I..\VcanLCD -I..\BadApple-I G:\MDK\ARM\RV31\INC-I G:\MDK\ARM\CMSIS\Include-I G:\MDK\ARM\Inc\ST\STM32F10x-o .\obj\badapple.o --omf_browse .\obj\badapple.crf --depend .\obj\badapple.d)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\BadApple\BadApple.h)(0x57FCF306)
+I (G:\MDK\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ff.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\integer.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\ffconf.h)(0x55A5502A)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4CC31A73)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x4CBC3900)
+I (G:\MDK\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x4CBC3900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\stm32f10x_conf.h)(0x56A9BEB7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\diskio.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MicroSD\stm32f10x_microsd.h)(0x58009A20)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\delay.h)(0x57F99900)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\CString.h)(0x57FE2A09)
+I (G:\MDK\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (G:\MDK\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\MyLib\SystemCore.h)(0x57FBA4C3)
+I (G:\MDK\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLCDforSTM32.h)(0x580098AD)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\GPIOLIKE51.h)(0x4F770561)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Color.h)(0x58009645)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\VcanLcdKey.h)(0x57FA43F7)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\HZK16.h)(0x58009646)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\VcanLCD\Image_BMP.h)(0x57FC73F4)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4CBC3904)
+I (G:\MySTM32F103c8t6\C8T6Projects\BadApple\USER\led.h)(0x57F9B381)

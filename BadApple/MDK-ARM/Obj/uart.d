@@ -1,0 +1,16 @@
+.\obj\uart.o: ..\USER\uart.c
+.\obj\uart.o: ..\USER\uart.h
+.\obj\uart.o: G:\MDK\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\uart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\uart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\obj\uart.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\obj\uart.o: G:\MDK\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\uart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\obj\uart.o: ..\USER\stm32f10x_conf.h
+.\obj\uart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
+.\obj\uart.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\obj\uart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\uart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h
+.\obj\uart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\uart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\obj\uart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h

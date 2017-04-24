@@ -1,0 +1,878 @@
+//main.c
+
+
+
+#include "include.h"     //包含所有的头文件
+
+int main(void)
+{
+		SystemInit(); 			 //系统时钟初始化为72M	  SYSCLK_FREQ_72MHz
+		All_Init();	         // HardWare Init
+		while (1)
+		{
+				Gui();	             //交互界面显示
+				AutoAngle();	       //姿态获取	
+				ComWithHC();			
+				PowerOnStart_Main(); //上电延时启动辅助函数	
+				FeedDog();			
+				UiThreadDelay(UiDelayMS);			
+    }
+}
+
+// end main.c
+
+//motor.c
+
+#include "include.h"
+
+int16 MotorDuty = 0;
+int16 MoSet = 0;
+
+int8 RaceModeEN = DisEnable;
+
+MotorParaType MotorPara = {65,65,0};
+
+#ifdef RaceMode
+		bool IsAlwaysRun = true;
+#else
+		bool IsAlwaysRun = false;
+#endif
+
+void Set_Motor_PWM(int value)             
+{   
+	if(value <= MINMOTORDUTY)
+		value = MINMOTORDUTY;
+	if(value >= MAXMOTORDUTY)
+		value = MAXMOTORDUTY;
+	MotorDutyReg = value;
+}
+
+void Motor_Control(void)
+{
+		int StaightSpeedTemp = SensorPara.HasQianSensorRec == true ?  MotorPara.StraghtSpeed : MIN_SPEED;
+		int TurnSpeedTemp = SensorPara.HasQianSensorRec == true ?  MotorPara.TurnSpeed : MIN_SPEED;
+		if(RaceModeEN == Enable)
+		{
+			if(ChipDirection == Straight)
+				MoSet = MotorPara.StraghtSpeed;
+			else
+				MoSet = MotorPara.TurnSpeed;
+		}
+		#ifdef YaoKongDebug
+		if(TimerGo.EN == false && RemoteCtr.EN == false)
+		{
+			if(SensorStatus_SC == 0)
+			{		
+					MoSet = (IsAlwaysRun == true) ? (StaightSpeedTemp - 10) :MINMOTORDUTY;
+
+			}
+			else 
+			{
+				if(ChipDirection == Straight) MoSet = StaightSpeedTemp;
+				else                   			 MoSet = TurnSpeedTemp;
+			}
+		}
+		#endif
+		Set_Motor_PWM(LowValtageStart());
+		//Set_Motor_PWM(MoSet);
+}
+
+byte LowStartCoe = 50;  //越小滞后越厉害 范围1~100
+byte SlowDownCoe = 50;  //越小滞后越厉害 范围1~100
+byte MotorNowDuty = 0;
+
+int16 LowValtageStart(void)  //低通滤波 给定积分算法 使平滑加速 因为南孚电池不给力 
+{
+	  static int16 MN_Temp = 0;
+	  if(MoSet >= GetMotorNowDuty() + 9)
+			MN_Temp = (float)(MoSet * LowStartCoe + GetMotorNowDuty() * (100 - LowStartCoe))/100.0 + 0.5;//加0.5代表四舍五入
+		else if( GetMotorNowDuty() >= MoSet + 8)
+		  MN_Temp = (float)(MoSet * SlowDownCoe + GetMotorNowDuty() * (100 - SlowDownCoe))/100.0 + 0.5;//加0.5代表四舍五入;
+		else
+			MN_Temp = MoSet;
+		return MN_Temp;
+}
+
+int GetMotorNowDuty(void)
+{
+	  static int16 MotorDutyTemp;
+		MotorDutyTemp = MotorDutyReg;
+		MotorNowDuty = MotorDutyTemp;
+		return MotorDutyTemp;
+}
+
+void HighSpeed(void)
+{
+	MotorPara.StraghtSpeed = 70;
+	MotorPara.TurnSpeed = 55;
+	up_fmq();
+}
+
+void MiddleSpeed(void)
+
+{    MotorPara.StraghtSpeed = 50;
+	   MotorPara.TurnSpeed = 40;
+		up_fmq();
+}
+
+void LowSpeed(void)
+{
+	MotorPara.StraghtSpeed = 40;
+	MotorPara.TurnSpeed = 30;
+	up_fmq();
+}
+
+void SpeedFromHC(void)
+{
+	MotorPara.StraghtSpeed =  GetInQueue(Queue_Byte);
+	MotorPara.TurnSpeed = MotorPara.StraghtSpeed - 20;
+	up_fmq();
+}
+
+void ChangeIsAlwaysRun()
+{
+	IsAlwaysRun = !IsAlwaysRun;
+	IsAlwaysRun == true?up_fmq():down_fmq();
+}
+
+
+
+//end motor.c
+
+//servo.c
+
+#include "include.h"
+
+int16 ServoDuty = 0;
+int16 SerMid = SERVOMIDINIT;
+int16 SerPWM = SERVOMIDINIT;
+int16 SerSet = SERVOMIDINIT;
+
+PIDType SerPD = {46,0,400,0,0,0};// Kp Ki Kd
+ServoParaType ServoPara = {0,SERVOMIDINIT,false,false};
+
+int GetServoNowDuty(void)
+{
+	static int16 ServoDutyTemp;
+	ServoDutyTemp = ServoDutyReg;
+	ServoPara.DutyNow = ServoDutyTemp;
+	return ServoPara.DutyNow;
+}
+
+void Set_Servo_PWM(int value) 	//舵机占空比0.05 ~ 0.1  1000us ~ 2000us 
+{   
+   SerPWM = SerMid + value;   
+   if(SerPWM>SerMid + SERVO_RANGE_L)  SerPWM = SerMid + SERVO_RANGE_L; 
+   if(SerPWM<SerMid - SERVO_RANGE_R)  SerPWM = SerMid - SERVO_RANGE_R;
+	 if(SerPWM <= SERVO_DUTY_REFINE_S)  SerPWM = SERVO_DUTY_REFINE_S;
+	 if(SerPWM >= SERVO_DUTY_REFINE_B)  SerPWM = SERVO_DUTY_REFINE_B;
+   ServoDutyReg = SerPWM;
+}
+
+void Servo_PD(int16 GoalTemp)
+{
+    static float e = 0; 
+    static float e_bef = 0;        
+    static float ec = 0;       
+	int16 SerSet_Delta = 0;
+	if(GoalTemp >= 0  && Yaw.ShowData >= 0)
+		e = absi(GoalTemp - Yaw.ShowData)/100.0;
+	else if (GoalTemp < 0  && Yaw.ShowData < 0)
+		e = absi(GoalTemp - Yaw.ShowData)/100.0;
+	else if (GoalTemp < 0  && Yaw.ShowData >= 0)
+		e = MIN(18000 - Yaw.ShowData + GoalTemp + 18000,Yaw.ShowData - GoalTemp)/100.0;
+	else if (GoalTemp >= 0  && Yaw.ShowData < 0)
+		e = MIN(18000 - GoalTemp + Yaw.ShowData + 18000,GoalTemp - Yaw.ShowData)/100.0;
+	ec = e - e_bef;
+	SerPD.Real_P = SerPD.Kp * 0.1;
+	SerPD.Real_D = SerPD.Kd * 0.1;
+	SerSet_Delta = SerPD.Real_P * e + SerPD.Real_D* ec;
+	e_bef = e;
+	SerSet = SERVOMIDINIT + ChipDirection * SerSet_Delta;
+}
+
+void SensorJudgeTurn(void)
+{
+		SerSet = SERVOMIDINIT + ChipDirection * 100 * 
+			MAX(SensorPara.LeftMaxWeight,SensorPara.RightMaxWeight);
+}
+
+void Servo_Debug(void)
+{
+	static byte ModeCount = 0;
+	ModeCount = !ModeCount;
+	ServoPara.DebugEN = ModeCount;
+	ServoPara.DebugEN == true ? up_fmq():down_fmq();
+   
+}
+
+void ServoPWM_Cal(void)
+{
+    
+}
+
+void Servo_Control(void)
+{
+	  if(ServoPara.PDcontrolerEN == true && RemoteCtr.EN == DisEnable && ServoPara.DebugEN == false)
+		{
+
+	     Servo_PD(ServoPara.TurnGoalAngle);
+			 //Servo_PD(60 * 100); //别忘记乘以100  测试用
+		}
+    Set_Servo_PWM(SerSet - SERVOMIDINIT);
+}
+
+void ServoPD_Change(void)
+{
+	SerPD.Kp = GetInQueue(Queue_Byte) * 256 + GetInQueue(Queue_Byte);
+	SerPD.Kd = GetInQueue(Queue_Byte) * 256 + GetInQueue(Queue_Byte);
+	ok_fmq();
+	ok_fmq();
+}
+
+//end servo.c
+
+//sensor.c
+
+#include "include.h"
+
+Sensor_Type Sensor[16] = {{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0},{8,0},
+													{9,0},{10,0},{11,0},{12,0},{13,0},{14,0},{15,0},{16,0}};
+
+SensorPara_Type SensorPara = {0,0,0,0,9,16,true};												
+													
+int16 SensorStatus_SC;
+													
+void Sensor_Init(void)   
+{
+		GPIO_InitTypeDef GPIO_InitStructure; 
+		EXTI_InitTypeDef EXTI_InitStructure;
+		NVIC_InitTypeDef NVIC_InitStructure;
+	
+		RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOB| RCC_APB2Periph_GPIOA |RCC_APB2Periph_AFIO, ENABLE); 		//初始化别忘了时钟	
+	
+		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1  | GPIO_Pin_4 | GPIO_Pin_5
+																	|GPIO_Pin_7|GPIO_Pin_8|GPIO_Pin_9
+																	|GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14
+																	|GPIO_Pin_15;
+		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; 
+		GPIO_Init(GPIOB, &GPIO_InitStructure);
+	
+		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_4;
+		GPIO_Init(GPIOA, &GPIO_InitStructure);
+		/****************PB2 和 PB6 不行********************/
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource0); //把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource1); //把GPIO连接到中断上
+		//GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource3); //把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource4); //把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource5); //把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource7); //把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource8); //把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource9); //把GPIO连接到中断上
+		//GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource10); //把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource11); //把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource12);//把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource13);//把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource14);//把GPIO连接到中断上
+		GPIO_EXTILineConfig(GPIO_PortSourceGPIOB,GPIO_PinSource15);//把GPIO连接到中断上
+		/****************Line2 和 Line6 不行********************/
+		EXTI_InitStructure.EXTI_Line=EXTI_Line0;//PB0-->Line0
+		EXTI_InitStructure.EXTI_Mode=EXTI_Mode_Interrupt;
+		EXTI_InitStructure.EXTI_Trigger=EXTI_Trigger_Falling;//上升沿和下降沿都触发；
+		EXTI_InitStructure.EXTI_LineCmd=ENABLE;
+		EXTI_Init(&EXTI_InitStructure);
+    
+    EXTI_InitStructure.EXTI_Line=EXTI_Line1;//PB1-->Line1
+    EXTI_Init(&EXTI_InitStructure);   
+    //EXTI_InitStructure.EXTI_Line=EXTI_Line2;//PB2-->Line2
+    //EXTI_Init(&EXTI_InitStructure);   
+    //EXTI_InitStructure.EXTI_Line=EXTI_Line3;//PB3-->Line3
+    //EXTI_Init(&EXTI_InitStructure);
+    EXTI_InitStructure.EXTI_Line=EXTI_Line4;//PB4-->Line4
+    EXTI_Init(&EXTI_InitStructure);    
+    EXTI_InitStructure.EXTI_Line=EXTI_Line5;//PB5-->Line5
+    EXTI_Init(&EXTI_InitStructure);
+    //EXTI_InitStructure.EXTI_Line=EXTI_Line6;//PB6-->Line6
+    //EXTI_Init(&EXTI_InitStructure);
+    EXTI_InitStructure.EXTI_Line=EXTI_Line7;//PB7-->Line7
+    EXTI_Init(&EXTI_InitStructure);   
+    EXTI_InitStructure.EXTI_Line=EXTI_Line8;//PB8-->Line8
+    EXTI_Init(&EXTI_InitStructure);
+    EXTI_InitStructure.EXTI_Line=EXTI_Line9;//PB9-->Line9
+    EXTI_Init(&EXTI_InitStructure);
+    //EXTI_InitStructure.EXTI_Line=EXTI_Line10;//PB10-->Line10
+    //EXTI_Init(&EXTI_InitStructure);
+    EXTI_InitStructure.EXTI_Line=EXTI_Line11;//PB11-->Line11
+    EXTI_Init(&EXTI_InitStructure);
+    EXTI_InitStructure.EXTI_Line=EXTI_Line12;//PB12-->Line12
+    EXTI_Init(&EXTI_InitStructure);
+    EXTI_InitStructure.EXTI_Line=EXTI_Line13;//PB13-->Line13
+    EXTI_Init(&EXTI_InitStructure);   
+    EXTI_InitStructure.EXTI_Line=EXTI_Line14;//PB14-->Line14
+    EXTI_Init(&EXTI_InitStructure);
+    EXTI_InitStructure.EXTI_Line=EXTI_Line15;//PB15-->Line15
+    EXTI_Init(&EXTI_InitStructure);
+		
+		NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    
+    NVIC_InitStructure.NVIC_IRQChannel=EXTI0_IRQn;//PB0
+    NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority=1;    
+    NVIC_Init(&NVIC_InitStructure);
+    
+    NVIC_InitStructure.NVIC_IRQChannel=EXTI1_IRQn;//PB1
+    NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority=2;    
+    NVIC_Init(&NVIC_InitStructure);
+    
+    //NVIC_InitStructure.NVIC_IRQChannel=EXTI2_IRQn;//PB2没有
+    //NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+    //NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1;
+    //NVIC_InitStructure.NVIC_IRQChannelSubPriority=3;    
+    //NVIC_Init(&NVIC_InitStructure);
+    
+    NVIC_InitStructure.NVIC_IRQChannel=EXTI3_IRQn;//PB3
+    NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=2;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority=0;    
+    NVIC_Init(&NVIC_InitStructure);
+    
+    NVIC_InitStructure.NVIC_IRQChannel=EXTI4_IRQn;//PB4
+    NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=2;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority=1;    
+    NVIC_Init(&NVIC_InitStructure);
+    
+    NVIC_InitStructure.NVIC_IRQChannel=EXTI9_5_IRQn;//PB5,PB6,PB7,PB8,PB9
+    NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=2;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority=2;    
+    NVIC_Init(&NVIC_InitStructure);
+    
+    NVIC_InitStructure.NVIC_IRQChannel=EXTI15_10_IRQn;//PB10,PB11,PB12,PB13,PB14,PB15
+    NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=2;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority=3;    
+    NVIC_Init(&NVIC_InitStructure);   
+		
+		SensorWeight_Init();
+		
+}
+
+void EXTI0_IRQHandler(void)
+{
+		if( EXTI_GetITStatus(EXTI_Line0) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line0);   
+				if(++Sensor[0].Count > 65534) 
+						Sensor[0].Count = 0;
+		} 
+}
+void EXTI1_IRQHandler(void)
+{
+		if( EXTI_GetITStatus(EXTI_Line1) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line1);       
+				if(++Sensor[1].Count > 65534) 
+						Sensor[1].Count = 0;
+		} 
+}
+/*
+void EXTI2_IRQHandler(void)
+{
+  if( EXTI_GetITStatus(EXTI_Line2) != RESET )
+	{
+		EXTI_ClearITPendingBit(EXTI_Line2);       
+	} 
+}
+*/
+void EXTI3_IRQHandler(void)
+{
+		if( EXTI_GetITStatus(EXTI_Line3) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line3);   
+				if(++Sensor[3].Count > 65534) 
+						Sensor[3].Count = 0;
+		} 
+}
+void EXTI4_IRQHandler(void)
+{
+		if( EXTI_GetITStatus(EXTI_Line4) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line4);    
+				if(++Sensor[4].Count> 65534) 
+						Sensor[4].Count = 0;
+		} 
+}
+void EXTI9_5_IRQHandler(void)
+{
+		if( EXTI_GetITStatus(EXTI_Line5) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line5);  
+				if(++Sensor[5].Count > 65534) 
+						Sensor[5].Count = 0;
+		}  
+		/*if( EXTI_GetITStatus(EXTI_Line6) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line6);       
+		} */   
+		if( EXTI_GetITStatus(EXTI_Line7) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line7); 
+				if(++Sensor[7].Count > 65534) 
+						Sensor[7].Count = 0;
+		}   
+		if( EXTI_GetITStatus(EXTI_Line8) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line8);
+				if(++Sensor[8].Count > 65534) 
+						Sensor[8].Count = 0;
+		}    
+		if( EXTI_GetITStatus(EXTI_Line9) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line9);
+				if(++Sensor[9].Count > 65534) 
+						Sensor[9].Count = 0;
+		}
+}
+void EXTI15_10_IRQHandler(void)
+{
+		if( EXTI_GetITStatus(EXTI_Line10) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line10);   
+				if(++Sensor[10].Count > 65534) 
+						Sensor[10].Count = 0;
+		}
+		if( EXTI_GetITStatus(EXTI_Line11) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line11);  
+				if(++Sensor[11].Count > 65534) 
+						Sensor[11].Count = 0;			
+		}
+		if( EXTI_GetITStatus(EXTI_Line12) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line12);  
+				if(++Sensor[12].Count > 65534) 
+						Sensor[12].Count = 0;
+		}
+		if( EXTI_GetITStatus(EXTI_Line13) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line13); 
+				if(++Sensor[13].Count > 65534) 
+						Sensor[13].Count = 0;      
+		}
+		if( EXTI_GetITStatus(EXTI_Line14) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line14);  
+				if(++Sensor[14].Count > 65534) 
+						Sensor[14].Count = 0;
+		}
+		if( EXTI_GetITStatus(EXTI_Line15) != RESET )
+		{
+				EXTI_ClearITPendingBit(EXTI_Line15);    
+				if(++Sensor[15].Count > 65534) 
+						Sensor[15].Count = 0;
+		}
+}
+
+void SensorWeight_Init(void)
+{
+	/*
+		QianMiddleSensor.Weight = 1;
+		QianLeftSensor.Weight = 2;
+		QianRightSensor.Weight = 2;
+	
+	  HouMiddleSensor.Weight = 1;
+		HouLeftSensor.Weight = 8;
+		HouRightSensor.Weight = 8; 
+	
+		ZuoMiddleSensor.Weight = 10;
+		ZuoLeftSensor.Weight = 6;
+		ZuoRightSensor.Weight = 4; 
+	
+		YouMiddleSensor.Weight = 10;
+		YouLeftSensor.Weight = 4;
+		YouRightSensor.Weight = 6; 
+	*/
+//正前方	
+    Clock_0_Sensor.WeightInit = 0;
+/*******Right**********/
+    Clock_1_Sensor.WeightInit = 30;
+		Clock_2_Sensor.WeightInit = 50;
+		Clock_3_Sensor.WeightInit = 70;
+		Clock_4_Sensor.WeightInit = 65;
+		
+		Clock_5_Sensor.WeightInit = 60;
+//???
+		Clock_6_Sensor.WeightInit = 10;
+/*******Left**********/
+		Clock_7_Sensor.WeightInit = 60;
+		Clock_8_Sensor.WeightInit = 65;
+		
+		Clock_9_Sensor.WeightInit = 70;
+		Clock_10_Sensor.WeightInit = 50;
+		Clock_11_Sensor.WeightInit = 30;
+	  
+}
+
+static byte SensorToZeroCount = 0;
+#define TIM_Interval 10
+int16 SensorToZero_ms = 400;
+
+void SensorDeal(void)   //Ignore the Transmission Delay 
+{
+	  byte i = 0;
+		if(++SensorToZeroCount>SensorToZero_ms/TIM_Interval)
+		{
+				SensorToZeroCount = 0;
+	      for(;i<16;++i)
+				{
+					 Sensor[i].PulseNum = (u16)(((float)Sensor[i].Count * 0.9 +  (float)Sensor[i].PulseNum * 0.1) + 0.5);//低通滤波
+					 if(Sensor[i].PulseNum > Sensor[i].PulseNumPre + 22)   //防抖动滤波
+							Sensor[i].PulseNum = Sensor[i].PulseNumPre;
+					 Sensor[i].Count = 0;
+					 Sensor[i].PulseNumPre = Sensor[i].PulseNum;
+					 
+				 }
+				 for(i=0;i<16;++i)
+				 {					 
+					 if(Sensor[i].PulseNum >= 6)
+					 {
+							Sensor[i].Status = 1;
+						  SensorStatus_SC |= 1<<i;
+						  Sensor[i].WeightNow = Sensor[i].WeightInit;
+					 }
+					 else
+					 {
+						  Sensor[i].Status = 0;
+						  SensorStatus_SC &= ~(1<<i);
+							Sensor[i].WeightNow = 0;
+					 }
+				 }
+				 ServoPara.PDcontrolerEN = true;
+				 NewAnalysis();
+		}
+}
+
+
+
+
+//end sensor.c
+
+
+//contorl.c
+
+#include "include.h"
+
+RemoteCtrType RemoteCtr = {DisEnable,0,SERVOMIDINIT};
+
+int8 ChipRunEN = DisEnable;
+const Byte TIM_Interval = 10;
+
+static u8 TIMcountMotor = 0;
+static u8 TIMcountServo = 0;
+
+void Chip_Control(void)
+{
+	if(ChipRunEN == Enable)
+	{
+		 if(++TIMcountMotor>10)  //100ms改变电机电压一次 防止电机过热
+		 {
+				Motor_Control();
+				TIMcountMotor = 0;
+		 }
+
+	}
+	else
+	{   
+		 MoSet = INITMOTORDUTY;  
+		 Set_Motor_PWM(MoSet);
+	}
+			 if(++TIMcountServo >4)
+		 {
+				Servo_Control();    // 舵机40ms控制一次
+				TIMcountServo = 0;
+		 }
+	Chip_Protection_HC();
+	PowerOnWaitPoseCali();
+}
+
+void Stop(void)
+{
+	ChipRunEN = DisEnable;
+	up_fmq();	
+}
+
+void Run(void)
+{
+	ChipRunEN = Enable;
+	down_fmq();	
+}
+
+#define WaitPose_s 20
+uint16 WaitPoseCount = 0;
+bool IsWaitSuccess = false; 
+void PowerOnWaitPoseCali(void)
+{
+	if(++WaitPoseCount > WaitPose_s*1000/TIM_Interval && IsWaitSuccess == false)
+	{
+		CaliPoseButNotYaw();
+		ChipRunEN = Enable;
+		IsWaitSuccess = true;
+	}
+}
+/*****************************************************/
+
+/**********************定时运行***********************/
+
+TimerGoType TimerGo = {1,1,0,DisEnable,50};  
+
+void Timer_Run(void)   //测试用 TIM2 10ms
+{   
+	 if(ChipRunEN == Enable)
+	 {
+			if(TimerGo.Flag==0 && TimerGo.Time_count<=TimerGo.Time_s*100 && TimerGo.EN==Enable)
+			{
+					MoSet = TimerGo.Voltige_Percent;
+			}
+			if(TimerGo.Time_count>TimerGo.Time_s*1000 / TIM_Interval)
+			{
+					MoSet = 0;
+					TimerGo.Flag=1;
+					TimerGo.EN = DisEnable;
+			}
+			if(TimerGo.EN == DisEnable)
+			{
+					TimerGo.Flag=0;
+					TimerGo.Time_count=0;
+			}
+			if(TimerGo.EN == 1 && TimerGo.Flag == 0)
+          ++TimerGo.Time_count;         //TimerRun
+		}
+		else
+		{		
+			 TimerGo.EN = DisEnable;
+			 TimerGo.Time_s = 2; 
+			 TimerGo.Flag=0;
+		}
+}
+
+void TimerRun_HC(void)
+{
+		TimerGo.EN = DisEnable;
+		TimerGo.Flag = 0;
+		TimerGo.Time_count = 0;
+	   if(IsEmpty(Queue_Byte) == false)
+	   	{
+				TimerGo.Time_s = GetInQueue(Queue_Byte);
+				TimerGo.Voltige_Percent = GetInQueue(Queue_Byte);
+	   	}
+		else
+			  TimerGo.Time_s = 0;
+		TimerGo.EN = Enable;
+}
+
+/********************RemoteCtr**************************/
+
+void RemoteCtrDataDeal(void)
+{
+	 if(RemoteCtr.EN == Enable)
+	 {
+			SerSet = RemoteCtr.ServoDuty;
+			MoSet = RemoteCtr.MotorDuty;
+	 }
+}
+
+/****************ProTection******************/
+int8 ChipProCount = 0;
+int8 HC_NoSend_Count = 0;
+const Byte HC_Send_Interval = 120;
+
+bool IsChanged(int16 inn)
+{
+    static int16 Temp;
+	  static bool Result;
+	  Result = !(Temp == inn);
+		Temp = inn;
+	  return Result;
+}
+
+void Chip_Protection_HC(void)   //上位机断开通信保护 上位机遥控器模式特有
+{
+		if( ++HC_NoSend_Count >HC_Send_Interval / TIM_Interval + 1)
+		{
+				if(IsChanged(RecieveByte) == false && RemoteCtr.MotorDuty != 0 )
+				{
+						++ChipProCount;
+				}
+				else 
+				{
+						if( -- ChipProCount < 1)
+							ChipProCount = 0;
+				}	
+				if(ChipProCount > 5)
+				{
+						RemoteCtr.EN = DisEnable;
+						ChipProCount = 0;
+						RemoteCtr.MotorDuty = 0;
+						MoSet = 0;  // 电机不转
+				}
+				HC_NoSend_Count = 0;
+		}
+		
+}
+
+/********************上电延时启动************************/
+
+const Byte PowerOn_Time_s = 22;  //接通电池瞬间 开始计时
+DepartStartType DepartStart = {0,0,0};
+
+void PowerOnStart_Main(void)
+{
+   if(DepartStart.Time_count > PowerOn_Time_s*1000/TIM_Interval  && DepartStart.Flag == 0) 
+   { 
+      DepartStart.Flag = 1;
+      //RaceModeEN = Enable; 
+   }
+   if(DepartStart.EN == DisEnable)
+   {
+      DepartStart.Time_count = 0;
+      DepartStart.Flag = 0;
+   }
+
+}
+
+void PowerOnStart_TIM(void)
+{
+	  if(DepartStart.EN == Enable && DepartStart.Flag == 0)
+       ++DepartStart.Time_count;           
+}
+
+void PowerOnStart_EN(void)
+{
+		#ifdef PowerOnGoEN
+		DepartStart.EN = Enable;
+		#endif
+}
+
+/**********************StartTest****************/
+StartTestType StartTest;
+
+void StartTestGPIO_Init(void)
+{
+		GPIO_InitTypeDef GPIO_InitStructure; 
+	
+		RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOB, ENABLE); 		//初始化别忘了时钟	
+	
+		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
+
+		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; 
+		GPIO_Init(GPIOB, &GPIO_InitStructure);
+		
+}
+
+
+
+
+
+
+
+//end control.c
+
+//analysis.c
+
+
+#include "include.h"
+
+DirectionType ChipDirection = Straight;
+DirectionType ChipDirection_Pre = Straight;
+
+FlagType MyFlag = {0};
+
+void NewAnalysis(void)  //
+{
+	byte QianLeftWeightMax = 0,QianRightWeightMax = 0;
+	byte HouLeftWeightMax = 0,HouRightWeightMax = 0;
+	
+//	byte QianLeftWeightTotal = 0 ,QianRightWeightTotal = 0;
+	
+	QianRightWeightMax = ByteFindMax(QianRightSensor1.WeightNow,QianRightSensor2.WeightNow,QianRightSensor3.WeightNow,0);
+	QianLeftWeightMax =  ByteFindMax(QianLeftSensor1.WeightNow,QianLeftSensor2.WeightNow,QianLeftSensor3.WeightNow,0);
+	HouLeftWeightMax = MAX(HouLeftSensor1.WeightNow,HouLeftSensor2.WeightNow);
+	HouRightWeightMax = MAX(HouRightSensor1.WeightNow,HouRightSensor2.WeightNow);
+	
+	//QianRightWeightTotal = QianRightSensor1.WeightNow + QianRightSensor2.WeightNow + QianRightSensor3.WeightNow;
+	//QianLeftWeightTotal = QianLeftSensor1.WeightNow + QianLeftSensor2.WeightNow + QianLeftSensor3.WeightNow;
+	
+  if(QianLeftWeightMax != 0 || QianRightWeightMax != 0)
+	{
+			if(QianLeftWeightMax > QianRightWeightMax)
+				ChipDirection = Left;
+			else if(QianLeftWeightMax < QianRightWeightMax)
+				ChipDirection = Right;
+			else
+				ChipDirection = Straight;
+			SensorPara.HasQianSensorRec = true;
+	}
+	else if(HouLeftWeightMax != 0 || HouRightWeightMax != 0)
+	{
+			
+			if(HouLeftWeightMax > HouRightWeightMax)
+				ChipDirection = Left;
+			else if(HouLeftWeightMax < HouRightWeightMax)
+				ChipDirection = Right;
+			else
+				ChipDirection = Straight;
+			SensorPara.HasQianSensorRec = false;
+	}
+	else
+	{
+			ChipDirection = Straight;
+			SensorPara.HasQianSensorRec = true;
+	}
+	
+	if(ChipDirection == Left)
+	{
+		SensorPara.LeftMaxWeight = SensorPara.HasQianSensorRec == true ? QianLeftWeightMax : HouLeftWeightMax;
+		ServoPara.TurnGoalAngle = Yaw.ShowData - SensorPara.LeftMaxWeight * 15 * 15; //左右两边不对称，因为舵在船一边偏右
+		if(ServoPara.TurnGoalAngle < -18000)
+			ServoPara.TurnGoalAngle += 36000;
+	}
+  else if(ChipDirection == Right)
+	{
+		SensorPara.RightMaxWeight = SensorPara.HasQianSensorRec == true ? QianRightWeightMax : HouRightWeightMax;
+		ServoPara.TurnGoalAngle = Yaw.ShowData + SensorPara.RightMaxWeight * 15 * 10;//左右两边不对称，因为舵在船一边偏右
+		if(ServoPara.TurnGoalAngle > 18000)
+			ServoPara.TurnGoalAngle -= 36000;
+	}
+	else if(ChipDirection == Straight)
+	{
+		
+		ServoPara.TurnGoalAngle = Yaw.ShowData;
+	}
+	
+	ChipDirection_Pre = ChipDirection;
+	SensorPara.LeftWeightTotal = 0;
+  SensorPara.RightWeightTotal = 0;	
+	SensorPara.RightMaxWeight = 0;
+	SensorPara.LeftMaxWeight = 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end analysis.c
+
