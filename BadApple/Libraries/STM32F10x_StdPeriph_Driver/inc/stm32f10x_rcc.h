@@ -466,7 +466,7 @@ typedef struct
   * @{
   */
 
-#define RCC_AHBPeriph_DMA1               ((uint32_t)0x00000001)
+#define RCC_AHBPeriph_DMA1               (uint32_t)0x00000001
 #define RCC_AHBPeriph_DMA2               ((uint32_t)0x00000002)
 #define RCC_AHBPeriph_SRAM               ((uint32_t)0x00000004)
 #define RCC_AHBPeriph_FLITF              ((uint32_t)0x00000010)

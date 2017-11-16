@@ -143,7 +143,7 @@ struct
   PID_Type MyPID = {1,1,0,1,1,1,100,-100,1000,-1000}
 	MyDeltaPID(&MyPID ,e,10);
 */
-__packed typedef 
+typedef 
 struct
 {    
 	//public:
@@ -169,7 +169,7 @@ struct
     float Out;
     uint16 Now;
 		uint16 Set; 
-}PID_Type; //普通位置式和增量式PID类型
+}PID_Type; //锟斤拷通位锟斤拷式锟斤拷锟斤拷锟斤拷式PID锟斤拷锟斤拷
 
 /*********MovingAverageFilter*************/
 /* Sample usage:
@@ -191,7 +191,7 @@ struct MovingAverageFilter_Type
 }MovingAverageFilter_Type;
 
 /*************SISOKalmanFilter**************/
-__packed typedef 
+typedef 
 struct
 {
 	//public:

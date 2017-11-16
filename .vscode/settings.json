@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "include.h": "c",
+        "stm32f10x_tim.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

@@ -47,7 +47,7 @@ void ADCdeal(void)
 {
 		static MovingAverageFilter_Type OLEDKeyADFilter = {MyMAFilter,8};
 		AD_Value[0] = OLEDKeyADFilter.Filter(&OLEDKeyADFilter,ADCConvertedValue[0]) >> 2;
-		//»¬¶¯Æ½¾ùÂË²¨ °Ñ12Î»AD±ä³É10Î»
+		//ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½Ë²ï¿½ ï¿½ï¿½12Î»ADï¿½ï¿½ï¿½10Î»
    
 }
 
