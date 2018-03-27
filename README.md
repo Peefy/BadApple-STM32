@@ -1,8 +1,15 @@
-# BadApple-STM32-VcanLCD（128 * 64）-ff file system -SPI_MicroSD
+# BadApple-STM32
 
+BadApple-STM32-VcanLCD（128 * 64）-ff文件系统-SPI_MicroSD
 ## Required
 
 * *MDK 4+*
+
+## Screenshots
+
+<img src="https://github.com/Peefy/BadApple-STM32/blob/master/screenshots/1.png"/>
+
+<img src="https://github.com/Peefy/BadApple-STM32/blob/master/screenshots/2.png"/>
 
 ## Video
 
